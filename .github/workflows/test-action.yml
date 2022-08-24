@@ -1,0 +1,11 @@
+name: Test Action
+
+on: workflow_call
+
+jobs:
+  demo_run:
+    name: Demo Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug output
+        run: echo ::debug::TestRun
